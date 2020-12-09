@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--==================== Dropdown Groups ====================-->
+  <DesignatorDropdownGroupDef>
+    <defName>prfstorage_gr</defName>
+  </DesignatorDropdownGroupDef>
+  <!--==================== Base ====================-->
+  <ThingDef Name="PRF_MassStorageBase" ParentName="PRF_BuildingBase" Abstract="True">
+    <thingClass>ProjectRimFactory.Storage.Building_Crate</thingClass>
+    <designatorDropdown>prfstorage_gr</designatorDropdown>
+    <uiIconScale>0.7</uiIconScale>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <priority>Normal</priority>
+        <filter>
+          <categories>
+            <li>Root</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+      <li>ProjectRimFactory.Storage.UI.ITab_Items</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <!-- Just to make sure if any other mod still use old base -->
+  <ThingDef Name="PRFMassStorageBase" ParentName="PRF_MassStorageBase" Abstract="True">
+  </ThingDef>
+
+  <!--==================== small Wood Crate ====================-->
+  <ThingDef ParentName="PRF_MassStorageBase">
+    <defName>PRF_WoodCrate_I</defName>
+    <label>small wooden crate</label>
+    <graphicData>
+      <texPath>Storage/Wood_Crate6</texPath>
+      <drawSize>(2.8,1.3)</drawSize>
+      <color>(133,97,67,256)</color>      <!-- used to set wood color because stuffed isnt used -->
+      <drawRotated>false</drawRotated>      <!-- Can rotate ingame without rotate texture, will flip horizontaly only. -->
+    </graphicData>
+    <statBases>
+      <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-0.5</Beauty>
+      <MarketValue>170</MarketValue>
+    </statBases>
+    <building>
+      <defaultStorageSettings>
+        <priority>Normal</priority>
+        <filter>
+          <categories>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Items</li>
+            <li>BuildingsArt</li>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>BodyParts</li>
+          </categories>
+          <specialFiltersToDisallow>
+            <li>AllowRotten</li>            <!-- Disallow rotten by default -->
+          </specialFiltersToDisallow>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <description>(Tier 1 crate) A small crate that can store 16 stacks. Items stored in the crate do not deteriorate.</description>
+    <size>(2,1)</size>
+    <rotatable>true</rotatable>
+    <costList>
+      <WoodLog>40</WoodLog>
+      <Steel>10</Steel>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>PRF_Crates</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="ProjectRimFactory.Storage.Editables.DefModExtension_Crate">
+        <limit>16</limit>
+        <hideItems>true</hideItems>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!--==================== Wood Crate ====================-->
+  <ThingDef ParentName="PRF_MassStorageBase">
+    <defName>PRF_WoodCrate_II</defName>
+    <label>wooden crate</label>
+    <graphicData>
+      <texPath>Storage/Wood_Crate6</texPath>
+      <drawSize>(2.8,2.6)</drawSize>
+      <color>(133,97,67,256)</color>      <!-- used to set wood color because stuffed isnt used -->
+    </graphicData>
+    <statBases>
+      <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <MarketValue>230</MarketValue>
+      <Beauty>-0.5</Beauty>
+    </statBases>
+    <building>
+      <defaultStorageSettings>
+        <priority>Normal</priority>
+        <filter>
+          <categories>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Items</li>
+            <li>BuildingsArt</li>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>BodyParts</li>
+          </categories>
+          <specialFiltersToDisallow>
+            <li>AllowRotten</li>            <!-- Disallow rotten by default -->
+          </specialFiltersToDisallow>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <description>A giant crate that can store 32 stacks. Items stored in the crate do not deteriorate.</description>
+    <size>(2,2)</size>
+    <costList>
+      <WoodLog>80</WoodLog>
+      <Steel>20</Steel>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>PRF_Crates</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="ProjectRimFactory.Storage.Editables.DefModExtension_Crate">
+        <limit>32</limit>
+        <hideItems>true</hideItems>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!--==================== small Steel Crate ====================-->
+  <ThingDef ParentName="PRF_MassStorageBase">
+    <defName>PRF_SteelCrate_I</defName>
+    <label>small steel crate</label>
+    <graphicData>
+      <texPath>Storage/Steel_Crate</texPath>
+      <drawSize>(2.8,1.3)</drawSize>
+      <color>(102,102,105,256)</color>
+      <drawRotated>false</drawRotated>      <!-- Can rotate ingame without rotate texture, will flip horizontaly only. -->
+    </graphicData>
+    <statBases>
+      <Mass>10</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <MarketValue>360</MarketValue>
+      <Flammability>0.1</Flammability>
+      <Beauty>-0.1</Beauty>
+    </statBases>
+    <building>
+      <defaultStorageSettings>
+        <priority>Normal</priority>
+        <filter>
+          <categories>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Items</li>
+            <li>BuildingsArt</li>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>BodyParts</li>
+          </categories>
+          <specialFiltersToDisallow>
+            <li>AllowRotten</li>            <!-- Disallow rotten by default -->
+          </specialFiltersToDisallow>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <description>A small steel crate that can store 64 stacks. Items stored in the crate do not deteriorate.</description>
+    <size>(2,1)</size>
+    <rotatable>true</rotatable>
+    <costList>
+      <Steel>60</Steel>
+    </costList>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>PRF_SteelCrates</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="ProjectRimFactory.Storage.Editables.DefModExtension_Crate">
+        <limit>64</limit>
+        <hideItems>true</hideItems>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+
+  <!--==================== Steel Crate ====================-->
+  <ThingDef ParentName="PRF_MassStorageBase">
+    <defName>PRF_SteelCrate_II</defName>
+    <label>steel crate</label>
+    <graphicData>
+      <texPath>Storage/Steel_Crate</texPath>
+      <drawSize>(2.8,2.6)</drawSize>
+      <color>(102,102,105,256)</color>
+    </graphicData>
+    <statBases>
+      <Mass>10</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0.1</Flammability>
+      <MarketValue>480</MarketValue>
+      <Beauty>-0.2</Beauty>
+    </statBases>
+    <building>
+      <defaultStorageSettings>
+        <priority>Normal</priority>
+        <filter>
+          <categories>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Items</li>
+            <li>BuildingsArt</li>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>BodyParts</li>
+          </categories>
+          <specialFiltersToDisallow>
+            <li>AllowRotten</li>            <!-- Disallow rotten by default -->
+          </specialFiltersToDisallow>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <description>A giant crate that can store 128 stacks. Items stored in the crate do not deteriorate.</description>
+    <size>(2,2)</size>
+    <costList>
+      <Steel>120</Steel>
+    </costList>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>PRF_SteelCrates</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="ProjectRimFactory.Storage.Editables.DefModExtension_Crate">
+        <limit>128</limit>
+        <hideItems>true</hideItems>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!--==================== Cargo Platform / Digital Storage Unit ====================-->
+  <ThingDef ParentName="PRF_MassStorageBase">
+    <defName>PRF_DigitalStorageUnit_I</defName>
+    <label>digital storage unit</label>
+    <designatorDropdown>IO_gr</designatorDropdown>
+    <uiIconScale>0.9</uiIconScale>
+    <thingClass>ProjectRimFactory.Storage.Building_MassStorageUnitPowered</thingClass>
+    <graphicData>
+      <texPath>Storage/CargoPlatform</texPath>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <Mass>15</Mass>
+      <MaxHitPoints>450</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <MarketValue>10880</MarketValue>
+      <Flammability>0.05</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <building>
+      <defaultStorageSettings>
+        <priority>Normal</priority>
+        <filter>
+          <categories>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Items</li>
+            <li>BuildingsArt</li>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>BodyParts</li>
+          </categories>
+          <specialFiltersToDisallow>
+            <li>AllowRotten</li>            <!-- Disallow rotten by default -->
+          </specialFiltersToDisallow>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <description>Stores up to 768 stacks. Consumes 10 W of power per stack of items. When your colony loses power, items already inside will be safe, but the building will not be able to store more.</description>
+    <size>(3,3)</size>
+    <pathCost>150</pathCost>
+    <costList>
+      <Steel>300</Steel>
+      <Gold>50</Gold>
+      <Uranium>20</Uranium>
+      <Plasteel>250</Plasteel>
+      <ComponentIndustrial>100</ComponentIndustrial>
+      <ComponentSpacer>15</ComponentSpacer>
+    </costList>
+    <tickerType>Normal</tickerType>
+    <researchPrerequisites>
+      <li>PRF_StorageIO</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(115,198,206,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>0</basePowerConsumption>
+      </li>
+<li Class="ProjectRimFactory.Common.CompProperties_CompOutputAdjustable"/>
+    </comps>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="ProjectRimFactory.Storage.Editables.DefModExtension_CanUseStorageIOPorts" />
+      <li Class="ProjectRimFactory.Storage.Editables.DefModExtension_Crate">
+        <limit>768</limit>
+        <destroyContainsItems>true</destroyContainsItems>
+        <hideItems>true</hideItems>
+        <forbidPawnAccess>false</forbidPawnAccess>
+        <hideRightClickMenus>true</hideRightClickMenus>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!--============================== I/O Port ==============================-->
+  <ThingDef ParentName="PRF_BuildingBase">
+    <defName>PRF_IOPort_I</defName>
+    <label>I/O Port</label>
+    <thingClass>ProjectRimFactory.Storage.Building_StorageUnitIOPort</thingClass>
+    <drawerType>RealtimeOnly</drawerType>
+    <uiIconScale>0.7</uiIconScale>
+    <designatorDropdown>IO_gr</designatorDropdown>
+    <graphicData>
+      <texPath>Storage/IO_Port</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <pathCost>70</pathCost>
+    <building>
+      <fixedStorageSettings>
+        <priority>Normal</priority>
+        <filter>
+          <categories>
+            <li>Root</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Normal</priority>
+        <filter>
+          <categories>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ProjectRimFactory.Storage.UI.ITab_IOPortStorage</li>
+      <li>ProjectRimFactory.Storage.UI.ITab_Items</li>
+    </inspectorTabs>
+    <castEdgeShadows>true</castEdgeShadows>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>370</MarketValue>
+      <Flammability>1.0</Flammability>
+      <Mass>30</Mass>
+    </statBases>
+    <description>(tier 3) \n A Connection port for your storage Cargo Platforms. It can be set to Input/output from any Platform remotely in any range within the map.</description>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(115,198,206,0)</glowColor>
+      </li>
+    </comps>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <researchPrerequisites>
+      <li>PRF_StorageIO</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="ProjectRimFactory.Storage.DefModExtension_StorageUnitIOPortColor">
+        <inColor>(144, 222, 255, 255)</inColor>
+        <outColor>(215, 169, 72, 255)</outColor>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+
+</Defs>

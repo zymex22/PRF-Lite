@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--============================================== Belts Research base ============================================-->
+  <ResearchProjectDef Name="PRF_BeltsResearch" Abstract="True">
+    <tab>Automation</tab>
+    <researchViewY>5</researchViewY>
+    <techLevel>Industrial</techLevel>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="PRF_BeltsResearch">
+    <defName>PRF_BeltsI</defName>
+    <label>Conveyor belts</label>
+    <baseCost>300</baseCost>
+    <description>First set of conveyor belts, to make early automations</description>
+    <prerequisites>
+      <li>Electricity</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="PRF_BeltsResearch">
+    <defName>PRF_BeltsII</defName>
+    <label>Splitters and basic pullers</label>
+    <baseCost>500</baseCost>
+    <description>Basic Pullers and splitters to further improve your automation</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>PRF_BeltsI</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="PRF_BeltsResearch">
+    <defName>PRF_BeltsIII</defName>
+    <label>Advanced belts and pullers</label>
+    <techLevel>Industrial</techLevel>
+    <baseCost>500</baseCost>
+    <description>Advanced set of conveyor belts and pullers</description>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <prerequisites>
+      <li>PRF_BeltsII</li>
+    </prerequisites>
+    <researchViewX>6</researchViewX>
+  </ResearchProjectDef>
+
+</Defs>
