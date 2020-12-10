@@ -1,29 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>PRF-Transport</name>
+  <name>Project RimFactory Lite</name>
   <author>zymex</author>
   <supportedVersions>
     <li>1.1</li>
     <li>1.2</li>
   </supportedVersions>
-  <packageId>zymex.prftransport</packageId>
+  <packageId>zymex.prflite</packageId>
   <url>https://ludeon.com/forums/index.php?topic=30813.0</url>
-  <description> &lt;size=24&gt;Incompatible mods:&lt;/size&gt;
-  - Mend and Recycle (only on assemblers)
-  - Technology Blueprints &amp; Reverse Engineering (t3 miner bill option)
-  - Startup impact (only if mod settings are used)
-
-
-  This is our remake of Project RimFactory, its a overhauled version of great old mod by spdskatr.
-  We have expanded on original ideas and tried adding some more story to it.
-
-  Also try balance and stay in line with vanilla and other mods on workshop, without going too OP.
-  Or too far.
-  (we have sub mods for that.... :p)
-
-  We hope you enjoy this mod, if you need more info checkout our steam page, github page or join our discord.
-  We also working on a wiki on our discord for more info on how stuff work.
-
+  <description> This is a stripped down version of Project RimFactory Revived, containing only belts, pullers, and storage.  This mod is for players you want to use our transport systems with other mods adding automation, such as Vanilla Factions Expanded - Mechanoids, without having our full automation suite loaded.
+  
+  If you like this and want to see more, try out the full mod!
   </description>
   <modDependencies>
     <li>
@@ -39,12 +26,9 @@
     <li>brrainz.harmony</li>
     <li>UnlimitedHugs.HugsLib</li>
     <li>historic.IndustrialRollers</li>
-    <li>essecoisa.Floored</li>
-    <li>vanillaexpanded.achievements</li>
   </loadAfter>
   <incompatibleWith>
     <li>spdskatr.projectrimfactory</li>
-    <li>Spdskatr.ssBiggerBatteries</li>
     <li>automatic.startupimpact</li>
   </incompatibleWith>
 </ModMetaData>
