@@ -6,11 +6,28 @@
     <li>1.1</li>
     <li>1.2</li>
   </supportedVersions>
-  <packageId>zymex.prflite</packageId>
-  <url>https://ludeon.com/forums/index.php?topic=30813.0</url>
-  <description> This is a stripped down version of Project RimFactory Revived, containing only belts, pullers, and storage.  This mod is for players you want to use our transport systems with other mods adding automation, such as Vanilla Factions Expanded - Mechanoids, without having our full automation suite loaded.
-  
-  If you like this and want to see more, try out the full mod!
+  <packageId>zymex.prf.lite</packageId>
+  <url>https://github.com/zymex22/PRF-Lite</url>
+  <description> 
+  !!! NOTE - This mod will be out before Core is updated to 2.5.0 DONT go from this mod to Core instead before prf - core updates to 2.5.0 !!!
+  This Isnt comptaible with
+  PRF - core
+  PRF - Drones
+  PRF - Materials
+  PRF - Insanity
+  (it may be at a later point)
+
+ This is Lite version of PRF its meant to be a replacement of Industrial rollers mod (IR)
+ And for use with new mod from Vanilla Expanded - Mechanoid.
+
+ It will most likely only contain basic logistic stuff.
+
+ This is NOT compatible with core PRF as its just same mod with a lot of stuff cutout.
+ you should be able to at any time update to use core instead of this.
+ just disable this and enable PRF - Core instead.
+
+ as we use same Def names across
+
   </description>
   <modDependencies>
     <li>

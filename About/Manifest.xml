@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
   <version>2.4.9</version>
-  <manifestUri>https://raw.githubusercontent.com/zymex22/Project-RimFactory-Revived/master/About/Manifest.xml</manifestUri>
-  <downloadUri>https://github.com/zymex22/Project-RimFactory-Revived/releases</downloadUri>
+  <manifestUri>https://raw.githubusercontent.com/zymex22/PRF-Lite/blob/main/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/zymex22/PRF-Lite/releases</downloadUri>
   <dependencies>
     <li>brrainz.harmony</li>
   </dependencies>
   <incompatibleWith>
-    <li>Spdskatr.ssBiggerBatteries</li>
     <li>automatic.startupimpact</li>
   </incompatibleWith>
   <loadAfter>
@@ -17,8 +16,6 @@
     <li>essecoisa.Floored</li>
   </loadAfter>
   <suggests>
-    <li>historic.IndustrialRollers</li>
-    <li>Spdskatr.ssBatteryFuse</li>
   </suggests>
   <showCrossPromotions>true</showCrossPromotions>
 
