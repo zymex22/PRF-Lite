@@ -37,3 +37,29 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700
  just disable this and enable PRF - Core instead.
 
  as we use same Def names across
+ 
+ ## Special Support for mods:
+ - RimFridge - we use this for our cooled DSU/IO ports
+ - Save our Ship - They did building support for Refuelers (torpedo launchers)
+ - Combat Extended (CE) - They added support for Refuelers (turrets)
+ 
+ # Credits and Mentions
+Full Credit list is in core.
+But i would like to give a extra thanks you following ppl for made Logistical part possible..
+
+- Nobo (original creater of Belts)
+- LWM (for overhauling code for belts)
+- Thornsworth (for theese nice looking belts!)
+== R.I.P 2020 == he sadly never got to see them released :'(
+- AvatarFighter (new item tab for DSU)
+- Sn1p3rr3c0n (for a lot of functions and bug fixing C#)
+- Madara Uchiha (for adding prf support in CE)
+- Kentington (for adding prf support in SoS)
+- Oskar (for using our mod with hes Mech mod)
+- Spdskatr (for original prf sources)
+- Historic (for Industrial Rollers, which been inspiration for Nobo)
+
+- DeepStorage mod for always make ppl spam prf comments with DS complaints.....
+
+
+and our Turtle Test Squad for helping us making this release
