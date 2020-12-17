@@ -5,9 +5,9 @@ You can choose either play with this mod or with core+sub mods.
 When 2.5.0 releases for core you can swap between using either one.
 As they use same Def names and Assemblies.
 
-You can find PRF - Core here:
-https://github.com/zymex22/Project-RimFactory-Revived
-https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700
+You can find PRF - Core here:  
+https://github.com/zymex22/Project-RimFactory-Revived  
+https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700  
 
   !!! NOTE - This mod will be out before Core is updated to 2.5.0 DONT go from this mod to Core instead before prf - core updates to 2.5.0 !!!
  ## This Isnt comptaible with
