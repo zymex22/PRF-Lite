@@ -13,7 +13,7 @@
     <baseCost>1500</baseCost>
     <label>Wooden stockpile crates</label>
     <researchViewX>3</researchViewX>
-    <description>Allows colonists to build large crates for more compact storage.</description>
+    <description>Rudimentary storage boxes allow many stacks of items to stay organized and space efficient.</description>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="PRF_StorageResearch">
@@ -22,7 +22,7 @@
     <baseCost>2000</baseCost>
     <label>Steel stockpile crates</label>
     <researchViewX>6</researchViewX>
-    <description>Allows colonists to build reinforced stockpile crates.</description>
+    <description>stronger materials means better stacking, even more items can fit into these crates for many good reasons i swear</description>
     <prerequisites>
       <li>PRF_Crates</li>
     </prerequisites>
