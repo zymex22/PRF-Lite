@@ -60,39 +60,38 @@ But i would like to give a extra thanks you following ppl for made Logistical pa
 == R.I.P 2020 == he sadly never got to see them released :'(
 - AvatarFighter (New item tab for DSU)
 - Sn1p3rr3c0n (A lot of functions and bug fixing C#)
+- Extrien (Text guru for PRF flavor text)
+
 - Madara Uchiha (Adding prf support in CE)
 - Kentington (Adding prf support in SoS)
-- Oskar (Using our mod with hes Mech mod)
+- Oskar (Using our mod with hes Mechanoid mod)
 - Spdskatr (Original prf sources)
 - Historic (Industrial Rollers, which been inspiration for Nobo)  
   
 - DeepStorage mod for always make ppl spam prf comments with DS complaints.....
-  
 - Our Turtle Test Squad for helping us making this release
 
 
 ## Links:
-Project RimFactory - Core (NOT COMPATIBLE with Lite)
-https://github.com/zymex22/Project-RimFactory-Revived
-https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700
-
-Project RimFactory - Insanity (This is not compatible with Lite atm.)
+Project RimFactory - Core (NOT COMPATIBLE with Lite)  
+https://github.com/zymex22/Project-RimFactory-Revived  
+https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700  
+  
+Project RimFactory - Insanity (This is not compatible with Lite atm.)  
 https://github.com/zymex22/Project-RimFactory-Revived-Insanity 
-https://steamcommunity.com/sharedfiles/filedetails/?id=2037492036
-
-Project RimFactory - Drones (This is not compatible with Lite atm.)
-https://github.com/zymex22/Project-RimFactory-Revived-drones
-https://steamcommunity.com/sharedfiles/filedetails/?id=2037491557
-
-Project RimFactory - Materials (This is not compatible with Lite atm.)
-https://github.com/zymex22/Project-RimFactory-Revived-Materials
-
-
-Project RimFactory - Lite
-https://github.com/zymex22/PRF-Lite
-
-
-Discord
-Our Augmented Turtle Squad discord channel:
+https://steamcommunity.com/sharedfiles/filedetails/?id=2037492036  
+  
+Project RimFactory - Drones (This is not compatible with Lite atm.)  
+https://github.com/zymex22/Project-RimFactory-Revived-drones  
+https://steamcommunity.com/sharedfiles/filedetails/?id=2037491557  
+  
+Project RimFactory - Materials (This is not compatible with Lite atm.)  
+https://github.com/zymex22/Project-RimFactory-Revived-Materials  
+  
+Project RimFactory - Lite  
+https://github.com/zymex22/PRF-Lite  
+  
+Discord  
+Our Augmented Turtle Squad discord channel:  
 https://discord.gg/QBr7Wby
 
