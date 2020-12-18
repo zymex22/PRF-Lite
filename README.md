@@ -95,3 +95,5 @@ https://github.com/zymex22/PRF-Lite
 *Our Augmented Turtle Squad discord channel:*  
 https://discord.gg/QBr7Wby
 ![ATS Discord](https://imgur.com/x9KVZun.png)
+
+[![ATS Discord](https://imgur.com/x9KVZun.png)](https://discord.gg/QBr7Wby)
