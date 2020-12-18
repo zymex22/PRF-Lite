@@ -110,9 +110,6 @@
 									<findAllRottableForFilters>false</findAllRottableForFilters>
 								</li>
 								<li>
-									<compClass>ProjectRimFactory.Common.CompPRFHelp</compClass>
-								</li>
-								<li>
 									<compClass>ProjectRimFactory.Common.CompCallTickRareFromTick</compClass>
 								</li>
 							</comps>

@@ -345,7 +345,7 @@
       <MarketValue>2450</MarketValue>
     </statBases>
     <passability>Impassable</passability>
-    <description>A upgraded puller which run at a higher speed than mkI puller. pulling from stockpiles, I/O, belts, crates Into I/O, belts, storage... Very flexible in its connection!\n\nREMEMBER to turn it on after placing!</description>    <!--todo: maybe make a message on spawn if not turned on-->
+    <description>A upgraded puller which run at a higher speed than mkI puller. pulling from stockpiles, I/O, belts, crates Into I/O, belts, storage... Very flexible in its connection!</description>    <!--todo: maybe make a message on spawn if not turned on-->
     <altitudeLayer>Building</altitudeLayer>
     <placeWorkers>
       <li>ProjectRimFactory.AutoMachineTool.PlaceWorker_OutputCellsHilight</li>
@@ -665,7 +665,7 @@
     </statBases>
     <pathCost>0</pathCost>
     <fillPercent>0.4</fillPercent>    <!-- Cover from shell -->
-        <comps Inherit="false">>
+    <comps Inherit="false">>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>0</basePowerConsumption>
