@@ -1,7 +1,7 @@
 # PRF-Lite
 Welcome to Project RimFactory - Lite
-This is a Stripped version of PRF - Core, and is meant to be some simple automation without too heave on machines.
-You can choose either play with this mod or with core+sub mods.
+This is a Stripped version of PRF - Core, and is meant to be some simple automation without too heavy on machines.
+You can choose either play with this mod or with core + sub mods.
 When 2.5.0 releases for core you can swap between using either one.
 As they use same Def names and Assemblies.
 
@@ -9,7 +9,7 @@ You can find PRF - Core here:
 https://github.com/zymex22/Project-RimFactory-Revived  
 https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700  
 
-  !!! NOTE - This mod will be out before Core is updated to 2.5.0 DONT go from this mod to Core instead before prf - core updates to 2.5.0 !!!
+ ### !!! NOTE - This mod will be out before Core is updated to 2.5.0 DONT go from this mod to Core instead before prf - core updates to 2.5.0 !!!
  ## This Isnt comptaible with
   PRF - core
   PRF - Drones
@@ -42,24 +42,57 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700
  - RimFridge - we use this for our cooled DSU/IO ports
  - Save our Ship - They did building support for Refuelers (torpedo launchers)
  - Combat Extended (CE) - They added support for Refuelers (turrets)
+
+... If any mod need special support please contact us and we can see what we can do.
+Also if your modcreater and want fueling machine to fill your custom refualable comp see:
+https://github.com/zymex22/Project-RimFactory-Revived/blob/13aa0908355356b77cfe50a7f985993ca7186fe2/Source/ProjectRimFactory/Industry/Building_FuelingMachine.cs#L144 (instructions by LWM)
+
+to pull items off belts
+https://github.com/zymex22/Project-RimFactory-Revived/blob/master/Source/ProjectRimFactory/Common/GatherThingsUtility.cs
  
  # Credits and Mentions
 Full Credit list is in core.
 But i would like to give a extra thanks you following ppl for made Logistical part possible..
 
-- Nobo (original creater of Belts)
-- LWM (for overhauling code for belts)
-- Thornsworth (for theese nice looking belts!)
+- Nobo (Original creater of Belts)
+- LWM (Overhauling code for belts)
+- Thornsworth (Made theese awesome new Belt atlas Textures)  
 == R.I.P 2020 == he sadly never got to see them released :'(
-- AvatarFighter (new item tab for DSU)
-- Sn1p3rr3c0n (for a lot of functions and bug fixing C#)
-- Madara Uchiha (for adding prf support in CE)
-- Kentington (for adding prf support in SoS)
-- Oskar (for using our mod with hes Mech mod)
-- Spdskatr (for original prf sources)
-- Historic (for Industrial Rollers, which been inspiration for Nobo)
-
+- AvatarFighter (New item tab for DSU)
+- Sn1p3rr3c0n (A lot of functions and bug fixing C#)
+- Madara Uchiha (Adding prf support in CE)
+- Kentington (Adding prf support in SoS)
+- Oskar (Using our mod with hes Mech mod)
+- Spdskatr (Original prf sources)
+- Historic (Industrial Rollers, which been inspiration for Nobo)  
+  
 - DeepStorage mod for always make ppl spam prf comments with DS complaints.....
+  
+- Our Turtle Test Squad for helping us making this release
 
 
-and our Turtle Test Squad for helping us making this release
+## Links:
+Project RimFactory - Core (NOT COMPATIBLE with Lite)
+https://github.com/zymex22/Project-RimFactory-Revived
+https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700
+
+Project RimFactory - Insanity (This is not compatible with Lite atm.)
+https://github.com/zymex22/Project-RimFactory-Revived-Insanity 
+https://steamcommunity.com/sharedfiles/filedetails/?id=2037492036
+
+Project RimFactory - Drones (This is not compatible with Lite atm.)
+https://github.com/zymex22/Project-RimFactory-Revived-drones
+https://steamcommunity.com/sharedfiles/filedetails/?id=2037491557
+
+Project RimFactory - Materials (This is not compatible with Lite atm.)
+https://github.com/zymex22/Project-RimFactory-Revived-Materials
+
+
+Project RimFactory - Lite
+https://github.com/zymex22/PRF-Lite
+
+
+Discord
+Our Augmented Turtle Squad discord channel:
+https://discord.gg/QBr7Wby
+
