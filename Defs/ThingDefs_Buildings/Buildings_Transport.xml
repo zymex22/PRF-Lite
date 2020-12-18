@@ -4,15 +4,11 @@
   <!--============================== DropDown Categories ==============================-->
 
   <DesignatorDropdownGroupDef>
-    <defName>Pullers_gr</defName>
+    <defName>PRF_PullersGroup</defName>
   </DesignatorDropdownGroupDef>
 
   <DesignatorDropdownGroupDef>
-    <defName>IO_gr</defName>
-  </DesignatorDropdownGroupDef>
-
-  <DesignatorDropdownGroupDef>
-    <defName>PRF_Fuel_gr</defName>
+    <defName>PRF_IoGroup</defName>
   </DesignatorDropdownGroupDef>
 
   <!--==================== Fueling Machine ====================-->
@@ -37,7 +33,7 @@
       <Flammability>1.0</Flammability>
       <Mass>15</Mass>
     </statBases>
-    <description>A robotic arm built on a simple machine frame that can automatically fuel the building in front of it (the yellow cell points to the "front").\n\n(Works with "Refualable comp" buildings)\nAlso capable of Fueling mortars with shells</description>
+    <description>A Simple Refueling machine thats capable of refueling Generators, braziers, mortarts and everything else that uses normal refuelable/mortar comp.\nIt can also fuel some modded types eq. SoS, CE...\nWill pull in from everything in white cells and fuel what in front of it(the yellow cell points to the "front").\n\n(Works with "Refualable comp" buildings)\nAlso capable of Fueling mortars with shells</description>
     <costList>
       <Steel>30</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
@@ -50,6 +46,7 @@
         <basePowerConsumption>50</basePowerConsumption>
       </li>
       <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <tickerType>Rare</tickerType>
     <rotatable>true</rotatable>
@@ -66,9 +63,8 @@
   <!--============================== Smart Puller / vacuum Hopper ==============================-->
   <ThingDef ParentName="PRF_BuildingBase">
     <defName>PRF_SmartHopper</defName>
-    <label>Vacuum Hopper</label>
+    <label>Smart Hopper</label>
     <thingClass>ProjectRimFactory.SAL3.Things.Building_SmartHopper</thingClass>
-    <!-- <designatorDropdown>PRF_Fuel_gr</designatorDropdown> -->
     <uiIconScale>0.7</uiIconScale>
     <graphicData>
       <texPath>Storage/vacuum</texPath>
@@ -112,7 +108,7 @@
       <Flammability>1.0</Flammability>
       <Mass>30</Mass>
     </statBases>
-    <description>A Vacuum Hopper that sucks in any items on stockpiles within a 5-tile range. As long as items are in range, they can be pulled in, even from different stockpiles. Can be set up with a specific amount and type of item, and holds onto the item until it is pulled away.</description>
+    <description>A Intellegent hopper that can pickup stuff around it, withing its range (white cells)\nIt can toggle to only pickup covered stockpile cells or pickup from ground.\nIt will not actively push into anything it just hold on to things so assembler and such can pickup.\nCan also pickup from belts.\nIt Can't feed a Nutrient paste dispenser yet...</description>
     <costList>
       <Steel>150</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
@@ -154,13 +150,16 @@
     </modExtensions>
   </ThingDef>
 
+
+  <!--======================================= ===  PULLERS === ===============================================-->
+  <!--======================================= ================ ===============================================-->
   <!--======================================= Item Puller base ===============================================-->
   <ThingDef Name="PRF_Puller_Base" ParentName="PRF_BuildingBase" Abstract="true">
     <thingClass>ProjectRimFactory.AutoMachineTool.Building_ItemPuller</thingClass>
     <drawerType>RealtimeOnly</drawerType>
     <tickerType>Never</tickerType>
     <uiIconScale>0.7</uiIconScale>
-    <designatorDropdown>Pullers_gr</designatorDropdown>
+    <designatorDropdown>PRF_PullersGroup</designatorDropdown>
     <costList>
       <Steel>150</Steel>
       <ComponentIndustrial>20</ComponentIndustrial>
@@ -233,7 +232,7 @@
       <MarketValue>1200</MarketValue>
     </statBases>
     <passability>Impassable</passability>
-    <description>(PRF) A Puller that pulls foodstuffs from growzones and places them into storage or onto a belt.</description>
+    <description>Attach to end of grow zone, will pull set items within selected growzone. Will not pull from neighboring grow zones.</description>
     <altitudeLayer>Building</altitudeLayer>
     <placeWorkers>
       <li>ProjectRimFactory.AutoMachineTool.PlaceWorker_OutputCellsHilight</li>
@@ -385,7 +384,7 @@
       <MarketValue>1404</MarketValue>
     </statBases>
     <passability>Impassable</passability>
-    <description>(PRF) A 90 degree angled Puller that moves items from A to B. Similar to the basic puller, but allowing turns! You can swap the direction (left/right) after placing.\n\nREMEMBER to turn it on after placing!</description>
+    <description>A 90 degree angled Puller that moves items from A to B. Similar to normal puller, but allowing turns!\nYou can swap the direction (left/right) after placing.</description>
     <altitudeLayer>Building</altitudeLayer>
     <researchPrerequisites Inherit="false">
       <li>PRF_BeltsIII</li>
@@ -451,7 +450,7 @@
     <statBases>
       <MarketValue>1200</MarketValue>
     </statBases>
-    <description>(PRF) An in-wall item Puller that pushes items from A to B.\n\nThis one is placed through a wall, and is well insulated enough for use in freezers and secure enough for prisons where you dont want anyone crawling through.\n\nRemember you still need to turn it on!</description>
+    <description>An in-wall item Puller that pushes items from A to B.\n\nThis one is placed through a wall, and is well insulated enough for use in freezers and secure enough for prisons where you dont want anyone crawling through.\n\nRemember you still need to turn it on!</description>
     <altitudeLayer>BuildingOnTop</altitudeLayer>
     <building>
       <isEdifice>false</isEdifice>
@@ -485,23 +484,23 @@
   </ThingDef>
 
 
-
+  <!--======================================= ==== BELTS ==== ===============================================-->
   <!--======================================= =============== ===============================================-->
   <!--======================================= Dropdown Groups ===============================================-->
   <DesignatorDropdownGroupDef>
-    <defName>UgRollers_gr</defName>
+    <defName>PRF_UgBeltsGroup</defName>
   </DesignatorDropdownGroupDef>
 
   <DesignatorDropdownGroupDef>
-    <defName>Rollers_gr</defName>
+    <defName>PRF_BeltsGroup</defName>
   </DesignatorDropdownGroupDef>
   <!--======================================= ============= ===============================================-->
-  <!--======================================= Conveyor base ===============================================-->
+  <!--==================================== Conveyor Belts base ============================================-->
   <!--======================================= ============= ===============================================-->
   <ThingDef Name="PRF_Conveyor_Base" ParentName="PRF_BuildingBase" Abstract="true">
     <thingClass>ProjectRimFactory.AutoMachineTool.Building_BeltConveyor</thingClass>
     <altitudeLayer>Building</altitudeLayer>
-    <designatorDropdown>Rollers_gr</designatorDropdown>
+    <designatorDropdown>PRF_BeltsGroup</designatorDropdown>
     <uiIconScale>0.7</uiIconScale>
     <costList>
       <Steel>2</Steel>
@@ -560,7 +559,7 @@
   <ThingDef ParentName="PRF_DraggableConveyorBelt_Base">
     <defName>PRF_Conveyor_Simple_I</defName>
     <label>conveyor belt</label>
-    <description>A conveyor belt that can move items from A to B. Point the arrows in the direction you want to it carry things and then place items on top!\n\nConveyor belts can automatically handle turning and with Splitters can branch if you want that, and will dump into Storage or stockpiles - or just leave stuff on the ground when the belts end.  But because they are rather unsophisticated, they will happily dump whatever they have off the end if there is room.</description>
+    <description>Conveyor belts transport items from one end to the other. It will dump into Storage or stockpiles - or just leave stuff on the ground when the belts end.\nBut because they are rather unsophisticated, they will happily dump whatever they have off the end if there is room.\nA corner can be made by just leading the belt into the side of another belt and will seamlessly continue.</description>
     <clearBuildingArea>false</clearBuildingArea>
     <uiIconPath>Belts/v3/BeltConveyorIcon</uiIconPath>
     <graphicData>
@@ -604,10 +603,10 @@
     <building>
       <isEdifice>false</isEdifice>
       <blueprintGraphicData>
-        <texPath>AutoMachineTool/Buildings/BeltConveyorTest</texPath>
-        <graphicClass>ProjectRimFactory.AutoMachineTool.Graphic_LinkedConveyorV2</graphicClass>
+        <texPath>[notActualTexPath>[texPath>Belts/v3/Atlas_PRF_Rollers_512x512_Padded_Walls_v3_bp[/texPath>[arrowDrawOffset](0,0.2,0)[/arrowDrawOffset][/notActualTexPath></texPath>        <!--TODO-->
+        <graphicClass>ProjectRimFactory.AutoMachineTool.Graphic_LinkedConveyorTwo</graphicClass>
         <drawRotated>true</drawRotated>
-        <drawSize>(0.8,0.8)</drawSize>
+        <drawSize>(1, 1)</drawSize>
       </blueprintGraphicData>
     </building>
   </ThingDef>
@@ -616,9 +615,9 @@
   <ThingDef ParentName="PRF_DraggableConveyorBelt_Base">
     <defName>PRF_Conveyor_UG_I</defName>
     <label>underground belt</label>
-    <designatorDropdown>UgRollers_gr</designatorDropdown>
-    <description>Underground Conveyor Belts carry items in tunnels under the ground. To move items into the subterrainian passages, you need to use the Underground Conveyor Entrance and Exit.</description>
-    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <designatorDropdown>PRF_UgBeltsGroup</designatorDropdown>
+    <description>Underground Conveyor Belts carry items in tunnels under the ground. To move items into the subterrainian passages, you need to use the Underground Conveyor Entrance and Exit.\nThis can move under Walls, machines and other belts without connecting.</description>
+    <altitudeLayer>Gas</altitudeLayer>    <!-- FloorEmplacement -->
     <pathCost>0</pathCost>
     <fillPercent>0.0</fillPercent>
     <researchPrerequisites Inherit="false">
@@ -654,7 +653,7 @@
   <ThingDef Name="PRF_UGConnector_Base" ParentName="PRF_Conveyor_Base" Abstract="true">
     <thingClass>ProjectRimFactory.AutoMachineTool.Building_BeltConveyorUGConnector</thingClass>
     <clearBuildingArea>true</clearBuildingArea>
-    <designatorDropdown>UgRollers_gr</designatorDropdown>
+    <designatorDropdown>PRF_UgBeltsGroup</designatorDropdown>
     <researchPrerequisites Inherit="false">
       <li>PRF_BeltsIII</li>
     </researchPrerequisites>
@@ -666,6 +665,15 @@
     </statBases>
     <pathCost>0</pathCost>
     <fillPercent>0.4</fillPercent>    <!-- Cover from shell -->
+        <comps Inherit="false">>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>0</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="ProjectRimFactory.CompProperties_TransmitsPower" />
+    </comps>
   </ThingDef>
 
   <!--======================================= Conveyor floor connector to underground ===============================================-->
@@ -771,8 +779,8 @@
   <ThingDef ParentName="PRF_Belt_Splitter">
     <defName>PRF_Conveyor_Splitter_UG</defName>
     <label>underground splitter</label>
-    <designatorDropdown>UgRollers_gr</designatorDropdown>
-    <description>A conveyor splitter unit built into the ground.  This one will hand off items to other underground conveyor belts.</description>
+    <designatorDropdown>PRF_UgBeltsGroup</designatorDropdown>
+    <description>Splitting features of a normal splitter without the surface eyesore</description>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <pathCost>0</pathCost>
     <passability>Standable</passability>
@@ -830,7 +838,7 @@
     <researchPrerequisites Inherit="false">
       <li>PRF_BeltsIII</li>
     </researchPrerequisites>
-    <designatorDropdown>Rollers_gr</designatorDropdown>
+    <designatorDropdown>PRF_BeltsGroup</designatorDropdown>
     <building>
       <isEdifice>false</isEdifice>
       <!--      <blueprintGraphicData>
