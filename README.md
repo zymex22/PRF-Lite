@@ -73,25 +73,25 @@ But i would like to give a extra thanks you following ppl for made Logistical pa
 
 
 ## Links:
-Project RimFactory - Core (NOT COMPATIBLE with Lite)  
+**Project RimFactory - Core** (NOT COMPATIBLE with Lite)  
 https://github.com/zymex22/Project-RimFactory-Revived  
 https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700  
   
-Project RimFactory - Insanity (This is not compatible with Lite atm.)  
+**Project RimFactory - Insanity** (This is not compatible with Lite atm.)  
 https://github.com/zymex22/Project-RimFactory-Revived-Insanity 
 https://steamcommunity.com/sharedfiles/filedetails/?id=2037492036  
   
-Project RimFactory - Drones (This is not compatible with Lite atm.)  
+**Project RimFactory - Drones** (This is not compatible with Lite atm.)  
 https://github.com/zymex22/Project-RimFactory-Revived-drones  
 https://steamcommunity.com/sharedfiles/filedetails/?id=2037491557  
   
-Project RimFactory - Materials (This is not compatible with Lite atm.)  
+**Project RimFactory - Materials** (This is not compatible with Lite atm.)  
 https://github.com/zymex22/Project-RimFactory-Revived-Materials  
   
-Project RimFactory - Lite  
+**Project RimFactory - Lite**  
 https://github.com/zymex22/PRF-Lite  
   
-Discord  
-Our Augmented Turtle Squad discord channel:  
+**Discord**  
+*Our Augmented Turtle Squad discord channel:*  
 https://discord.gg/QBr7Wby
-
+[ATS Discord](https://imgur.com/x9KVZun.png)
