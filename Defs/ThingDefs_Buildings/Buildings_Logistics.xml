@@ -47,16 +47,9 @@
     </statBases>
     <description>A Simple Refueling machine thats capable of refueling Generators, braziers, mortarts and everything else that uses normal refuelable/mortar comp.\nIt can also fuel some modded types eq. SoS, CE...\nWill pull in from everything in white cells and fuel what in front of it(the yellow cell points to the "front").\n\n(Works with "Refualable comp" buildings)\nAlso capable of Fueling mortars with shells</description>
     <costList>
-      <Steel>20</Steel>
-      <PRF_MachineFrame_I>1</PRF_MachineFrame_I>
-      <PRF_RoboticArm>1</PRF_RoboticArm>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
-    <!-- Cost list for lite
-    <costList>
       <Steel>30</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
-    </costList>-->
+    </costList>
     <minifiedDef>MinifiedThing</minifiedDef>
     <comps>
       <li Class="CompProperties_Power">
