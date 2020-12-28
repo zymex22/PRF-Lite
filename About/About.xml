@@ -46,6 +46,5 @@
   </loadAfter>
   <incompatibleWith>
     <li>spdskatr.projectrimfactory</li>
-    <li>automatic.startupimpact</li>
   </incompatibleWith>
 </ModMetaData>
