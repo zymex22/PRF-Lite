@@ -236,7 +236,7 @@
       <MarketValue>1200</MarketValue>
     </statBases>
     <passability>Impassable</passability>
-    <description>When attached to the end of grow zone, this will pull selected items within. Only functions on adjacent grow zones.</description>
+    <description>A specialized puller that will pull from adjacent grow zones. Must be connected to the grow zone to function properly.</description>
     <altitudeLayer>Building</altitudeLayer>
     <graphicData>
       <texPath>Belts/Growzone</texPath>
