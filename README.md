@@ -10,7 +10,7 @@ https://github.com/zymex22/Project-RimFactory-Revived
 https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700  
 
  ### !!! NOTE - This mod will be out before Core is updated to 2.5.0 DONT go from this mod to Core instead before prf - core updates to 2.5.0 !!!
- ## This Isnt comptaible with
+ ## PRF - Lite is NOT compatible with other PRF versions:
   PRF - Core
   PRF - Drones
   PRF - Materials
@@ -20,7 +20,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700
  The PRF - Lite version is meant to be a replacement of Industrial rollers mod (IR).
  It is a great compliment to Vanilla Faction Expanded - Mechanoids.
 
-## It will Contain all logistic stuff from core and no machines...
+## Designed for optimal compatibility, this stripped-down version contain all the logistics stuff from PRF - Core without the machines.
  It has:
  - Conveyor Belts
  - Splitters
